@@ -6,13 +6,21 @@
     <link href="./style.css" type="text/css" rel="stylesheet"></link>
   </head>
   <body>
-    <script src="localhost:3001/bundle.js"></script>
-    <script src="localhost:3003/bundle.js"></script>
-    <script src="localhost:3004/bundle.js"></script>
-    <script src="localhost:3005/bundle.js"></script>
-
+    <div id="quick-cart-app"></div>
+    <div id="mini-cart-app"></div>
     <div class="product-images" id="product-images"></div>
     <div class="product-details" id="product-details"></div>
-    
+    <div id="quick-add-app" hidden></div>
+    <div id="photo-app" hidden></div>
+    <div id="app"></div>
+
+    <!-- quick-cart -->
+    <script src="http://localhost:3001/bundle.js"></script>
+    <!-- product-details -->
+    <script src="http://localhost:3003/bundle.js"></script>
+    <!-- photo-carousel -->
+    <script src="http://localhost:3004/bundle.js"></script>
+    <!-- reviews -->
+    <script src="http://localhost:3005/bundle.js"></script>
   </body>
 </html>
