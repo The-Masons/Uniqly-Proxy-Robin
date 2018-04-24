@@ -1,0 +1,28 @@
+{
+  "name": "proxy",
+  "version": "1.0.0",
+  "description": "Proxy server for Uniqly",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/the-masons/uniqly-proxy-robin.git"
+  },
+  "author": "Robin Markowitz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/the-masons/uniqly-proxy-robin/issues"
+  },
+  "homepage": "https://github.com/the-masons/uniqly-proxy-robin#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "react": "^16.3.2",
+    "react-router": "^4.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.3"
+  }
+}
