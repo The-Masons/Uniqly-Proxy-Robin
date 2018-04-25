@@ -3,6 +3,22 @@ body {
   font-size: 12px;
 }
 
+.product-page {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.product-page.mini-cart-app {
+  display: flex;
+  align-self: flex-end;
+}
+
+.product-description {
+  display: flex;
+  flex-flow: row;
+}
+
 .thumbnails{
   float: left;
   width: 75px;
@@ -369,7 +385,6 @@ body {
 
 .minicart-icon {
   box-sizing: border-box;
-
   background-color: red;
   height: 2.5em;
   width: 2.5em;
@@ -482,7 +497,7 @@ body {
   flex-flow: column;
   height: auto;
   width: 400px;
-  margin: 50px 0 0 0;
+  margin: 0;
 }
 
 .quickadd-select {
