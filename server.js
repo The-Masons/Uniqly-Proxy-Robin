@@ -1,8 +1,5 @@
 const express = require('express');
 const path = require('path');
-const Route = require('react-router').Route;
-const Router = require('react-router').Router;
-const Switch = require('react-router').Switch;
 
 const app = express();
 const port = process.env.PORT || 3000;

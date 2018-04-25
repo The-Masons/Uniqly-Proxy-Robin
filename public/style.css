@@ -9,11 +9,6 @@ body {
   align-items: center;
 }
 
-.product-page.mini-cart-app {
-  display: flex;
-  align-self: flex-end;
-}
-
 .product-description {
   display: flex;
   flex-flow: row;
@@ -401,6 +396,7 @@ body {
   flex-flow: column;
   align-items: center;
   position: absolute;
+  right: 10px;
   background-color: white;
   width: 300px;
   border: 3px solid #CECECE;
@@ -831,4 +827,8 @@ slick styles
 
 .car-img:hover {
   opacity: 0.3;
+}
+
+.mini-cart-app {
+  align-self: flex-end;
 }
