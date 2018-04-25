@@ -3,16 +3,25 @@
     <meta charset="utf-8"/>
     <title>Uniqly</title>
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,700" rel="stylesheet">
-    <link href="./style.css" type="text/css" rel="stylesheet"></link>
+    <link href="http://localhost:3000/style.css" type="text/css" rel="stylesheet"></link>
   </head>
   <body>
-    <script src="localhost:3001/bundle.js"></script>
-    <script src="localhost:3003/bundle.js"></script>
-    <script src="localhost:3004/bundle.js"></script>
-    <script src="localhost:3005/bundle.js"></script>
+    <div class="product-page">
+      <div id="quick-cart-app"></div>
+      <div class="mini-cart-app" id="mini-cart-app"></div>
+      <div class="product-description">
+        <div class="product-images" id="product-images"></div>
+        <div class="product-details" id="product-details"></div>
+      </div>
+      <div id="quick-add-app" hidden></div>
+      <div id="app"></div>
+    </div>
 
-    <div class="product-images" id="product-images"></div>
-    <div class="product-details" id="product-details"></div>
-    
+    <!-- quick-cart -->
+    <script src="http://localhost:3001/bundle.js"></script>
+    <!-- product-details -->
+    <script src="http://localhost:3003/bundle.js"></script>
+    <!-- reviews -->
+    <script src="http://localhost:3005/bundle.js"></script>
   </body>
 </html>

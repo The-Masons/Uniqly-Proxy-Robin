@@ -19,8 +19,7 @@
   "homepage": "https://github.com/the-masons/uniqly-proxy-robin#readme",
   "dependencies": {
     "express": "^4.16.3",
-    "react": "^16.3.2",
-    "react-router": "^4.2.0"
+    "react": "^16.3.2"
   },
   "devDependencies": {
     "nodemon": "^1.17.3"
