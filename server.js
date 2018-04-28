@@ -15,46 +15,31 @@ app.get('/product/:productId', (req, res) => {
 
 app.get('/product/:productId/sizes_qtys', (req, res) => {
   axios.get(`http://13.57.205.67:3001/product/${req.params.productId}/sizes_qtys`)
-    .then(resp => {
-      console.log(resp.data);
-      res.status(200).send(resp.data);
-    })
+    .then(resp => res.status(200).send(resp.data))
     .catch(err => res.status(500).send(err));
 });
 
 app.get('/product/:productId/addtocart', (req, res) => {
   axios.get(`http://13.57.205.67:3001/product/${req.params.productId}/addtocart`)
-  .then(resp => {
-    console.log(resp.data);
-    res.status(200).send(resp.data);
-  })
+    .then(resp => res.status(200).send(resp.data))
     .catch(err => res.status(500).send(err));
 });
 
 app.get('/product/:productId/colors', (req, res) => {
   axios.get(`http://54.183.208.237:3003/product/${req.params.productId}/colors`)
-  .then(resp => {
-    console.log(resp.data);
-    res.status(200).send(resp.data);
-  })
+    .then(resp => res.status(200).send(resp.data))
     .catch(err => res.status(500).send(err));
 });
 
 app.get('/product/:productId/images', (req, res) => {
   axios.get(`http://54.183.208.237:3003/product/${req.params.productId}/images`)
-  .then(resp => {
-    console.log(resp.data);
-    res.status(200).send(resp.data);
-  })
+    .then(resp => res.status(200).send(resp.data))
     .catch(err => res.status(500).send(err));
 });
 
 app.get('/productdetails/:productId', (req, res) => {
   axios.get(`http://54.183.208.237:3003/productdetails/${req.params.productId}`)
-  .then(resp => {
-    console.log(resp.data);
-    res.status(200).send(resp.data);
-  })
+    .then(resp => res.status(200).send(resp.data))
     .catch(err => res.status(500).send(err));
 });
 
