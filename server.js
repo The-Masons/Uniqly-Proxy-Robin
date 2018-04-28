@@ -11,7 +11,12 @@ app.get('/product/:productId', (req, res) => {
   res.sendFile(path.join(__dirname, './public/index.html'));
 });
 
-app.get('/product/:productId/sizes_qtys', () => {});
+app.get('/product/:productId/sizes_qtys', (req, res) => {
+  axios.get(`http://13.57.205.67:3001/product/${req.params.productId}/sizes_qtys`)
+    .then(data => res.status(200).send(data))
+    .catch(err => res.status(500).send(err));
+});
+
 app.get('/product/:productId/addtocart', () => {});
 app.get('/product/:productId/colors', () => {});
 app.get('/product/:productId/images', () => {});
